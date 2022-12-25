@@ -189,18 +189,56 @@
   <!-- ******************* -->
   <!-- * Physics engines * -->
   <!-- ******************* -->
+  <!--
+      In ARGoS, multiple physics engines can run at the same time.
+      In this section you say which engines to use for the experiment.
+      To know which engines are available, type at the command prompt:
+      
+      $ argos3 -q physics_engines
+  -->
+  
+  <!--
+        Use a 2D dynamics engine here.
+  -->
+  
+  
   <physics_engines>
     <dynamics2d id="dyn2d" />
   </physics_engines>
 
+  
+  
+  
+  
   <!-- ********* -->
   <!-- * Media * -->
   <!-- ********* -->
+  <!--
+      Here you specify the media in use. Media allow robots to communicate.
+      In this experiment, robots do not communicate, so no media are
+      specified.
+      To know which media are available, type at the command prompt:
+      $ argos3 -q media
+  -->
+  
+  
   <media />
 
   <!-- ****************** -->
   <!-- * Visualization * -->
   <!-- ****************** -->
+  <!--
+      Here you specify which visualization to use.
+      You can also not specify a visualization at all, in which case ARGoS
+      will run without showing anything.
+      Having no visualization is useful when you run ARGoS in a batch of
+      experiments to collect statistics.
+      To know which visualizations are available, type at the command
+      prompt:
+      $ argos3 -q visualizations
+  -->
+  
+  
   <visualization>
     <qt-opengl>
       <camera>
