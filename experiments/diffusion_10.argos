@@ -4,6 +4,24 @@
   <!-- ************************* -->
   <!-- * General configuration * -->
   <!-- ************************* -->
+  <!--
+        System configuration:
+        - threads: the number of slave threads to parallelize the
+          computation. For less than 100 robots thread management is not
+          beneficial, so here we set it to 0. When set to 0, it means that
+          the computation is not parallelized: the main thread does
+          everything.
+    -->
+  <!--
+        Experiment configuration:
+        - length: total experiment time in seconds (0 means the experiment
+          has no time limit)
+        - ticks_per_second: number of ticks per second (int value)
+        - random_seed: seed of the main random number generator. If unset
+          or set to zero, this value is taken from the clock and a warning
+          message is displayed.
+    -->
+  
   <framework>
     <system threads="0" />
     <experiment length="0"
